@@ -1,0 +1,75 @@
+.button .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 96px;
+    margin-bottom: 100px;
+}
+
+.button__heading {
+    max-width: 445px;
+    width: 100%;
+    color: var(--color-Blue);
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+}
+
+.button__input {
+    @include input;
+}
+
+.button__btn {
+    @include btn;
+    position: absolute;
+    margin-left: -170px;
+    z-index: 10;
+}
+
+
+@media only screen and (max-width: 822px) {
+    .button .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .button__heading {
+        margin-bottom: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 457px) {
+    .button__heading {
+        max-width: 328px;
+        width: 100%;
+        color: var(--color-Blue);
+        text-align: center;
+        font-family: "DM Serif Display";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+    }
+
+    .button__input {
+        width: 327px;
+        height: 48px;
+        border-radius: 24px;
+        background: var(--color-White);
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        display: block;
+        margin-bottom: 16px;
+    }
+
+
+    .button__btn {
+        width: 327px;
+        height: 48px;
+        border-radius: 24px;
+        background: var(--color-DarkPink);
+        display: inline-block;
+        margin-left: -160px;
+    }
+}

@@ -1,0 +1,82 @@
+.humos .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 146px;
+    margin-bottom: 146px;
+}
+
+.humos__info {
+    max-width: 445px;
+    width: 100%;
+}
+
+.humos__heading {
+    width: 100%;
+    color: var(--color-Blue);
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    margin-bottom: 24px;
+}
+
+.humos__text {
+    width: 100%;
+    color: var(--color-LightBlue);
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.humos__item {
+    display: flex;
+}
+
+.humos__items {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .humos__item {
+        display: none;
+    }
+
+    .humos__items {
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 745px) {
+    .humos .container {
+        flex-direction: column;
+    }
+
+    .humos__items {
+        order: -2;
+    }
+
+    .humos__item {
+        order: 2;
+    }
+
+    .humos__info {
+        max-width: 573px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .humos__heading {
+        font-size: 36px;
+    }
+    
+    .humos__text {
+        font-size: 15px;
+    }
+}

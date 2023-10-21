@@ -1,0 +1,53 @@
+.money__list {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+
+.money__item {
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+.money__heading {
+    width: 100%;
+    color: var(--color-Blue);
+    text-align: center;
+    font-family: "Public Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.money__text {
+    width: 100%;
+    color: var(--color-LightBlue);
+    text-align: center;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .money__item {
+        max-width: 233px;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 660px) {
+    .money__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 58px;
+    }
+}
